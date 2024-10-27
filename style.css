@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
 
+:root[data-theme="dark"] {
+    color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+    color-scheme: light;
+}
+
 :root {
     --primary-color: #ff6b6b;
     --secondary-color: #98c9a3;

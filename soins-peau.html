@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="color-scheme" content="dark light">
+    <meta name="theme-color" content="#000000">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChouSbox - Soins de la Peau 🧴</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor cursor--large"></div>
+    <div class="cursor cursor--small"></div>
+
+    <nav class="navigation">
+        <div class="toggleMenu" aria-label="Toggle Menu"></div>
+        <ul>
+            <li><a href="index.html" data-text="Accueil">Accueil</a></li>
+            <li><a href="informatique.html" data-text="Informatique">Informatique</a></li>
+            <li><a href="hygiene.html" data-text="Hygiène">Hygiène</a></li>
+            <li><a href="ressources.html" data-text="Ressources">Ressources</a></li>
+        </ul>
+    </nav>
+
+    <section class="welcome-section">
+        <h1 class="glowing-text">Soins de la Peau</h1>
+        <p class="typing-text">Les essentiels pour une hygiène optimale</p>
+    </section>
+
+    <div class="content-container">
+        <article class="info-section product-section">
+            <h2>🛁 La Douche Parfaite</h2>
+            <div class="product-card">
+                <div class="product-header">
+                    <img src="images/sanex.jpg" alt="Gel Douche Sanex" class="product-image">
+                    <h3>Gel Douche Sanex</h3>
+                    <span class="price">~3€</span>
+                </div>
+                <div class="product-details">
+                    <h4>Pourquoi le choisir ?</h4>
+                    <ul>
+                        <li>✓ Respecte le pH naturel</li>
+                        <li>✓ Sans savon agressif</li>
+                        <li>✓ Protège le microbiome</li>
+                        <li>✓ Idéal pour peaux sensibles</li>
+                    </ul>
+                    <div class="usage-tips">
+                        <p>💡 Conseil : Utiliser de l'eau tiède</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="info-section essential-section">
+            <h2>💪 Les Indispensables</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-header">
+                        <img src="images/etiaxil.jpg" alt="Etiaxil" class="product-image">
+                        <h3>Etiaxil Anti-transpirant</h3>
+                        <span class="price">~10€</span>
+                    </div>
+                    <div class="product-details">
+                        <ul>
+                            <li>✓ Efficace 48-72h</li>
+                            <li>✓ Application après la douche</li>
+                            <li>⚠️ Sur peau sèche</li>
+                            <li>⚠️ PAS après epilation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-header">
+                        <img src="images/spf.jpg" alt="Crème Solaire" class="product-image">
+                        <h3>Crème Solaire SPF50+</h3>
+                        <div class="importance-tag">INDISPENSABLE</div>
+                    </div>
+                    <div class="product-details">
+                        <ul>
+                            <li>✓ Protection UVA/UVB</li>
+                            <li>✓ Tous les jours</li>
+                            <li>✓ Anti-vieillissement</li>
+                            <li>⚠️ Renouveler/2h</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="info-section warning-section">
+            <h2>⚠️ Mythes et Réalités</h2>
+            <div class="myth-grid">
+                <div class="myth-card">
+                    <div class="myth">❌ "Le savon de Marseille est meilleur"</div>
+                    <div class="reality">✓ Trop agressif, déséquilibre le pH</div>
+                </div>
+                <div class="myth-card">
+                    <div class="myth">❌ "Plus ça mousse, mieux ça lave"</div>
+                    <div class="reality">✓ La mousse n'est pas un indicateur d'efficacité, au contraire</div>
+                </div>
+                <div class="myth-card">
+                    <div class="myth">❌ "Pas besoin de crème solaire en hiver"</div>
+                    <div class="reality">✓ Les UV traversent les nuages</div>
+                </div>
+            </div>
+        </article>
+
+        <article class="info-section tips-section">
+            <h2>📝 Guide d'utilisation</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-icon">🌙</div>
+                    <h4>Le Soir</h4>
+                    <ul>
+                        <li>Douche tiède</li>
+                        <li>Etiaxil sur peau sèche</li>
+                        <li>Éviter les bains chauds</li>
+                    </ul>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">☀️</div>
+                    <h4>Le Matin</h4>
+                    <ul>
+                        <li>SPF50+ obligatoire</li>
+                        <li>2 doigts de crème</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="theme-switch">
+        <input type="checkbox" id="theme-toggle">
+        <label for="theme-toggle" class="theme-label">
+            <i class="moon">🌙</i>
+            <i class="sun">☀️</i>
+        </label>
+    </div>
+
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</body>
+</html>

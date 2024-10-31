@@ -1118,95 +1118,113 @@ body {
 }
 
 .myth-card {
-    background: rgba(255, 99, 71, 0.1);
-    padding: 1rem;
-    border-radius: 10px;
-    border: 1px solid rgba(255, 99, 71, 0.2);
+    background: rgba(255, 255, 255, 0.08);
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.myth-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.12);
 }
 
 .myth {
-    color: #ff6b6b;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: rgba(255, 107, 107, 0.1);
+    border-left: 4px solid var(--color-error);
+    margin-bottom: 15px;
 }
 
 .reality {
-    color: #51cf66;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: rgba(81, 207, 102, 0.1);
+    border-left: 4px solid var(--color-success);
 }
 
+/* Amélioration des cartes de conseils */
 .tips-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
+    gap: 2rem;
+    margin: 30px 0;
 }
 
 .tip-card {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 1.5rem;
-    border-radius: 10px;
-    text-align: center;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.12);
 }
 
 .tip-icon {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    background-clip: text;
 }
 
-@media (max-width: 768px) {
-    .product-grid {
-        grid-template-columns: 1fr;
+.tip-card h4 {
+    font-size: 1.3em;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.tip-card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.tip-card ul li {
+    margin: 12px 0;
+    padding-left: 25px;
+    position: relative;
+}
+
+.tip-card ul li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+}
+
+/* Ajout d'animations */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
     }
 }
 
-/* Remplacer la section après la ligne 1161 par : */
-
-.content-container {
-    width: 100%;
-    max-width: 1200px;  /* Plus large */
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
-}
-
-.info-section {
-    width: 100%;
-}
-
-.product-card {
-    width: 100%;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 15px;
-    padding: 20px;
-    margin: 0 0 20px 0;
-    box-sizing: border-box;
-}
-
-.product-header {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.product-details {
-    width: 100%;
-}
-
-.product-details ul {
-    width: 100%;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.product-details li {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
 .myth-card, .tip-card {
-    width: 100%;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 15px;
-    padding: 20px;
-    margin: 0 0 20px 0;
-    box-sizing: border-box;
+    animation: fadeInScale 0.5s ease-out forwards;
+}
+
+/* Variables de couleur supplémentaires */
+:root {
+    --color-error: #ff6b6b;
+    --color-success: #51cf66;
 }

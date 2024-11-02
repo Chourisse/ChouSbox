@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="color-scheme" content="dark light">
+    <meta name="theme-color" content="#000000">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChouSbox - Hygiène Domestique 🏠</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor cursor--large"></div>
+    <div class="cursor cursor--small"></div>
+
+    <nav class="navigation">
+        <div class="toggleMenu" aria-label="Toggle Menu"></div>
+        <ul>
+            <li><a href="index.html" data-text="Accueil">Accueil</a></li>
+            <li><a href="informatique.html" data-text="Informatique">Informatique</a></li>
+            <li><a href="hygiene.html" data-text="Hygiène">Hygiène</a></li>
+            <li><a href="ressources.html" data-text="Ressources">Ressources</a></li>
+        </ul>
+    </nav>
+
+    <section class="welcome-section">
+        <h1 class="glowing-text">Hygiène Domestique</h1>
+        <p class="typing-text">Guide pour un intérieur sain</p>
+    </section>
+
+    <div class="content-section">
+        <article class="info-card">
+            <h2>🤖 Automatisations</h2>
+            <ul class="clean-list">
+                <li>Robot aspirateur</li>
+                <li>Robot laveur</li>
+                <li>Purificateur d'air</li>
+            </ul>
+        </article>
+
+        <article class="info-card">
+            <h2>💡 Astuces Méconnues</h2>
+            <ul class="clean-list">
+                <li>Citron + sel pour détartrer robinets sans produits</li>
+                <li>Papier journal ou microfibre pour vitres sans traces</li>
+            </ul>
+        </article>
+
+        <article class="info-card">
+            <h2>🧪 Produits Malins</h2>
+            <ul class="clean-list">
+                <li>Pierre d'argile : nettoie tout sans rayer</li>
+                <li>Percarbonate : détachant naturel puissant</li>
+                <li>Acide citrique : détartre mieux que le vinaigre</li>
+                <li>Terre de Sommières : absorbe les taches grasses</li>
+                <li>Savon de Marseille en copeaux : lessive écologique</li>
+            </ul>
+        </article>
+
+        <article class="info-card">
+            <h2>⚠️ Précautions Importantes</h2>
+            <ul class="clean-list warning">
+                <li>Ne jamais mélanger eau de Javel et vinaigre (gaz toxique)</li>
+                <li>Robot laveur incompatible avec tapis/moquettes</li>
+                <li>Vérifier compatibilité produits avec surfaces</li>
+                <li>Débrancher robots avant maintenance</li>
+                <li>Nettoyer capteurs robots mensuellement</li>
+            </ul>
+        </article>
+    </div>
+
+    <div class="theme-switch">
+        <input type="checkbox" id="theme-toggle">
+        <label for="theme-toggle" class="theme-label">
+            <i class="moon">🌙</i>
+            <i class="sun">☀️</i>
+        </label>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

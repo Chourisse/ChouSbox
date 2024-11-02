@@ -8,13 +8,14 @@
     <title>ChouSbox - Hygiène Domestique 🏠</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div class="cursor cursor--large"></div>
     <div class="cursor cursor--small"></div>
 
     <nav class="navigation">
-        <div class="toggleMenu" aria-label="Toggle Menu"></div>
+        <div class="toggleMenu"></div>
         <ul>
             <li><a href="index.html" data-text="Accueil">Accueil</a></li>
             <li><a href="informatique.html" data-text="Informatique">Informatique</a></li>
@@ -24,48 +25,93 @@
     </nav>
 
     <section class="welcome-section">
-        <h1 class="glowing-text">Hygiène Domestique</h1>
-        <p class="typing-text">Guide pour un intérieur sain</p>
+        <h1 class="glowing-text">Guide d'Hygiène Domestique</h1>
+        <p class="typing-text">Découvrez les secrets d'une maison saine</p>
     </section>
 
     <div class="content-section">
-        <article class="info-card">
-            <h2>🤖 Automatisations</h2>
-            <ul class="clean-list">
-                <li>Robot aspirateur</li>
-                <li>Robot laveur</li>
-                <li>Purificateur d'air</li>
-            </ul>
+        <article class="info-card" data-aos="fade-up">
+            <div class="card-icon">🧺</div>
+            <h2>Machine à Laver</h2>
+            <div class="card-content">
+                <ul class="clean-list">
+                    <li class="highlight-item">
+                        <span class="icon">⚠️</span>
+                        <strong>Important:</strong> Laissez toujours la porte de la machine à laver ouverte après utilisation
+                    </li>
+                    <li><span class="icon">🔄</span> Nettoyage mensuel du joint en caoutchouc</li>
+                    <li><span class="icon">🌡️</span> Cycle à vide 90°C avec vinaigre blanc (tous les 2 mois)</li>
+                    <li><span class="icon">🔍</span> Vérification trimestrielle du filtre</li>
+                    <li><span class="icon">💧</span> Essuyage du tambour après chaque usage</li>
+                </ul>
+            </div>
         </article>
 
-        <article class="info-card">
-            <h2>💡 Astuces Méconnues</h2>
-            <ul class="clean-list">
-                <li>Citron + sel pour détartrer robinets sans produits</li>
-                <li>Papier journal ou microfibre pour vitres sans traces</li>
-            </ul>
+        <article class="info-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-icon">🏠</div>
+            <h2>Zones Oubliées</h2>
+            <div class="card-content">
+                <ul class="clean-list">
+                    <li class="highlight-item">
+                        <span class="icon">🧹</span>
+                        <strong></strong> Nettoyage des murs au microfibre
+                    </li>
+                    <li><span class="icon">🚪</span> Dessus des portes et plinthes</li>
+                    <li><span class="icon">🔌</span> Interrupteurs et poignées</li>
+                    <li><span class="icon">🪑</span> Sous les meubles lourds</li>
+                    <li><span class="icon">📚</span> Derrière les bibliothèques</li>
+                    <li><span class="icon">🖼️</span> Cadres et tableaux</li>
+                    <li><span class="icon">💡</span> Ampoules et luminaires</li>
+                </ul>
+                <div class="frequency-indicator">
+                    <span class="tag">Fréquence recommandée: 6 mois</span>
+                </div>
+            </div>
         </article>
 
-        <article class="info-card">
-            <h2>🧪 Produits Malins</h2>
-            <ul class="clean-list">
-                <li>Pierre d'argile : nettoie tout sans rayer</li>
-                <li>Percarbonate : détachant naturel puissant</li>
-                <li>Acide citrique : détartre mieux que le vinaigre</li>
-                <li>Terre de Sommières : absorbe les taches grasses</li>
-                <li>Savon de Marseille en copeaux : lessive écologique</li>
-            </ul>
+        <article class="info-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-icon">💨</div>
+            <h2>Ventilation</h2>
+            <div class="card-content">
+                <ul class="clean-list">
+                    <li class="highlight-item">
+                        <span class="icon">🌬️</span>
+                        <strong>Crucial:</strong> Nettoyage régulier des grilles d'aération
+                    </li>
+                    <li><span class="icon">🔄</span> VMC tous les 3 mois</li>
+                    <li><span class="icon">🪟</span> Aérations des fenêtres</li>
+                    <li><span class="icon">👩‍🍳</span> Filtres de hotte mensuel</li>
+                    <li><span class="icon">💨</span> Nettoyage des bouches d'aération</li>
+                </ul>
+                <div class="warning-box">
+                    <p>Une bonne ventilation réduit de 60% les risques de moisissures</p>
+                </div>
+            </div>
         </article>
 
-        <article class="info-card">
-            <h2>⚠️ Précautions Importantes</h2>
-            <ul class="clean-list warning">
-                <li>Ne jamais mélanger eau de Javel et vinaigre (gaz toxique)</li>
-                <li>Robot laveur incompatible avec tapis/moquettes</li>
-                <li>Vérifier compatibilité produits avec surfaces</li>
-                <li>Débrancher robots avant maintenance</li>
-                <li>Nettoyer capteurs robots mensuellement</li>
-            </ul>
+        <article class="info-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-icon">🔍</div>
+            <h2>Points de Vigilance</h2>
+            <div class="card-content">
+                <ul class="clean-list warning">
+                    <li class="alert-item">
+                        <span class="icon">⚡</span>
+                        Radiateurs et accumulation de poussière
+                    </li>
+                    <li class="alert-item">
+                        <span class="icon">💧</span>
+                        Joints de fenêtres et moisissures
+                    </li>
+                    <li class="alert-item">
+                        <span class="icon">🚰</span>
+                        Contrôle des siphons
+                    </li>
+                    <li class="alert-item">
+                        <span class="icon">🚽</span>
+                        Joints silicone salle de bain
+                    </li>
+                </ul>
+            </div>
         </article>
     </div>
 
@@ -76,7 +122,15 @@
             <i class="sun">☀️</i>
         </label>
     </div>
-
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 100,
+            once: true
+        });
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="script.js"></script>
 </body>

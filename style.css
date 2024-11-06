@@ -1150,7 +1150,6 @@ body {
     border-left: 4px solid var(--color-success);
 }
 
-/* Amélioration des cartes de conseils */
 .tips-grid {
     gap: 2rem;
     margin: 30px 0;
@@ -1207,7 +1206,6 @@ body {
     color: var(--accent-color);
 }
 
-/* Ajout d'animations */
 @keyframes fadeInScale {
     from {
         opacity: 0;
@@ -1223,7 +1221,6 @@ body {
     animation: fadeInScale 0.5s ease-out forwards;
 }
 
-/* Variables de couleur supplémentaires */
 :root {
     --color-error: #ff6b6b;
     --color-success: #51cf66;
@@ -1396,7 +1393,7 @@ body {
     border-bottom: 2px solid var(--accent-color);
     padding-bottom: 0.5rem;
     display: inline-block;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajout de l'ombre */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .clean-list li {
@@ -1560,17 +1557,17 @@ body {
 }
 
 .category-card {
-    position: relative; /* Assurez-vous que la carte a une position relative */
-    overflow: hidden; /* Pour éviter que le contenu déborde */
+    position: relative;
+    overflow: hidden;
 }
 
 .category-card a {
-    display: flex; /* Pour que le lien prenne toute la carte */
-    flex-direction: column; /* Pour aligner le contenu verticalement */
-    text-decoration: none; /* Supprime le soulignement */
-    color: inherit; /* Utilise la couleur du texte de la carte */
-    height: 100%; /* Assure que le lien prend toute la hauteur de la carte */
-    width: 100%; /* Assure que le lien prend toute la largeur de la carte */
-    padding: 0px; /* Ajoutez du padding si nécessaire */
-    box-sizing: border-box; /* Pour inclure le padding dans la largeur/hauteur */
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
 }

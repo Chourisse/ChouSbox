@@ -1405,16 +1405,15 @@ body {
     transition: all 0.3s ease;
     padding-left: 1.5rem;
     position: relative;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Ajout de l'ombre */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .clean-list li:hover {
     padding-left: 2rem;
     color: var(--accent-color);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre plus prononcée au survol */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Amélioration du titre principal aussi */
 .welcome-section h1 {
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
 }
@@ -1422,8 +1421,6 @@ body {
 .welcome-section p {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-
-/* Nouveaux styles à ajouter à la fin du fichier */
 
 .card-icon {
     font-size: 2.5em;
@@ -1562,3 +1559,18 @@ body {
     transform: translateX(5px);
 }
 
+.category-card {
+    position: relative; /* Assurez-vous que la carte a une position relative */
+    overflow: hidden; /* Pour éviter que le contenu déborde */
+}
+
+.category-card a {
+    display: flex; /* Pour que le lien prenne toute la carte */
+    flex-direction: column; /* Pour aligner le contenu verticalement */
+    text-decoration: none; /* Supprime le soulignement */
+    color: inherit; /* Utilise la couleur du texte de la carte */
+    height: 100%; /* Assure que le lien prend toute la hauteur de la carte */
+    width: 100%; /* Assure que le lien prend toute la largeur de la carte */
+    padding: 0px; /* Ajoutez du padding si nécessaire */
+    box-sizing: border-box; /* Pour inclure le padding dans la largeur/hauteur */
+}

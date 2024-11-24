@@ -93,6 +93,7 @@ body {
     position: relative;
     padding-top: var(--nav-height);
     transition: padding-top var(--transition-speed) ease-in-out;
+    margin-bottom: 60px;
 }
 
 @keyframes gradientBG {
@@ -881,7 +882,7 @@ body {
 }
 
 .cursor--large.hover {
-    width: 160px;
+    width: 140px;
     height: 40px;
     mix-blend-mode: normal;
     background: rgba(255, 255, 255, 0);
@@ -1570,4 +1571,34 @@ body {
     width: 100%;
     padding: 0px;
     box-sizing: border-box;
+}
+
+.warning-card {
+    background: rgba(255, 87, 87, 0.1);
+    border: 1px solid rgba(255, 87, 87, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+.warning-card h2 {
+    color: #ff5757;
+    margin-bottom: 1.5rem;
+}
+
+.clean-list {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+.clean-list li {
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.card-content {
+    padding: 1rem 0;
 }

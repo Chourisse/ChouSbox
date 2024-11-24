@@ -27,9 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let isHovering = false;
     let hoverPosition = { x: 0, y: 0 };
     
-    const springStrength = 0.9;
-    const friction = 0.7;
-    const maxStretch = 55;
+    const springStrength = 0.1;
+    const friction = 0.6;
+    const maxStretch = 5;
   
     document.addEventListener('mousemove', (e) => {
       mouseX = e.clientX;

@@ -1603,3 +1603,9 @@ body {
     padding: 1rem 0;
 }
 
+@media (hover: none) and (pointer: coarse) {
+    .cursor--large,
+    .cursor--small {
+        display: none !important;
+    }
+}
